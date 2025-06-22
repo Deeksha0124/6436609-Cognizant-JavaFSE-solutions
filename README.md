@@ -1,5 +1,5 @@
 # 6436609-Cognizant-JavaFSE-solutions
 
-This repository contains my solutions to the Java Full Stack Engineer (FSE) training exercises provided by Cognizant.
+This repository contains solutions to the Java Full Stack Engineer (FSE) training exercises provided by Cognizant as part of their learning program.
 
-Each exercise focuses on a specific core concept in Java programming, design patterns, algorithms, problem-solving, etc — all essential for building a strong foundation in full-stack development.
+The goal of this repository is to practice and demonstrate Java programming skills through hands-on exercises, focusing on object-oriented principles, design patterns, data structures, algorithm analysis and many more.
