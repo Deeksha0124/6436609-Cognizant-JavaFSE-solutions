@@ -1,0 +1,45 @@
+We have 3 different ways of calculating TIME COMPLEXITY:
+
+1. Best Case : Minimum number of times the basic operation gets executed.
+2. Worst Case : Maximum number of times the basic operation gets executed.
+3. Average Case : Here we take all the random inputs, calculate the computational time for all the inputs and then we divide by total number of inputs.
+
+SEARCH OPERATIONS
+
+2 popularly used search algorithms are : LINEAR SEARCH and BINARY SEARCH
+
+1. LINEAR :  This is the simplest algorithm, where each element in a list is checked sequentially until the target element is found or the end of the list is reached.
+
+a) Best Case: The element is the first item in the list. This takes only one comparison.
+Eg: Consider an array -> [4, 5, 6, 7, 9] and our target element is 4.
+    The total number of operations required to search for 4 is only 1 because 4 is the first item of the array and we don't need to search any further. Hence, the time complexity for BEST CASE is O(1).
+
+b) Worst Case : The element is the last item in the list, or not present in the list at all. This requires 'n' comparisons, where 'n' is the number of items.
+Eg: Consider an array -> [4, 5, 6, 7, 9] and our target element is 9.
+    The total number of operations required to find the target element (9 in this case), increases linearly with 'n' (total number of items in the array, i.e, 5 in this case. So the greater the 'n' value, more will be the number of search operations. Hence, the time complexity for WORST CASE is O(n).
+
+c) Average Case: The element is found roughly in the middle of the list, requiring approximately n/2 comparisons.
+Eg: Consider an array -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and our target element is 5.
+    The total number of operations required to find the target element (5 in this case) is 5 because we find our target in the 5th position of the array (4th index).
+     So, on average, it takes n/2 = 10/2 = 5 -> about 5 comparisons for 10 items to find the target.
+    Hence, the time complexity for AVERAGE CASE is O(n). (we drop constants like /2 in Big O).
+
+
+
+
+
+2. BINARY : This algorithm works on sorted data. It repeatedly divides the search interval in half. It compares the middle element of the interval with the target value.            If they match, the search is complete. If the target is smaller, the search continues in the lower half; otherwise, it continues in the upper half.
+
+a) Best Case: The element is exactly in the middle of the array. This takes only one comparison.
+Eg: Consider a sorted array -> [4, 5, 6, 7, 9] and our target element is 6.
+    The total number of operations required to search for 6 is only 1 because 6 is at the middle of the array, and we don't need to search any further. Hence, the time complexity for BEST CASE is O(1).
+
+b) Worst Case: The element is not present in the array or is found only after the maximum number of divisions. In this case, the search keeps halving the array until only              one element remains. This requires log n comparisons, where 'n' is the number of items.
+Eg: Consider a sorted array -> [4, 5, 6, 7, 9] and our target element is 8.
+    The algorithm compares 6 (middle element), then goes right and compares 7, then 9, and finally concludes that the element is not present in the array. The number of operations depends on how many times we can divide the list in half before it becomes empty. Hence, the time complexity for WORST CASE is O(log n).
+
+c) Average Case: The element is found somewhere after a few divisions of the array, but not immediately. This requires approximately log n comparisons.
+Eg: Consider a sorted array -> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and our target element is 6.
+    The algorithm first checks the middle element (5), then goes right and checks 8, then left and finds 6. So the total number of operations to find the target element (6 in this case) is about 3. This is much better than linear search, especially when the size of the array is large. Hence, the time complexity for AVERAGE CASE is O(log n). (we drop constants in Big O notation)
+
+

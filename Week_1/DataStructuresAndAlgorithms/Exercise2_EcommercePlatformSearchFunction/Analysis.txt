@@ -1,0 +1,16 @@
+Case	         Linear Search	     Binary Search
+
+Best Case   	    O(1)	            O(1)
+Average Case	    O(n)	            O(log n)
+Worst Case	        O(n)	            O(log n)
+
+
+
+-> Linear search checks each product one by one, so it can be slow if there are many items. In the worst case, it has to go      through the whole list, which takes time.
+
+-> Binary search is much faster because it keeps cutting the list in half. But it only works if the product list is already      sorted.
+
+
+For an e-commerce platform with lots of products, binary search is better because it's quicker and more efficient for large,
+sorted data.
+
