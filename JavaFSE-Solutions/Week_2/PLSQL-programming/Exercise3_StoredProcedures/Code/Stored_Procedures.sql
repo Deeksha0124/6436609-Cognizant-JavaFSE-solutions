@@ -105,9 +105,6 @@ COMMIT;
 END IF;
 END;
 /
-
 EXEC TransferFunds(1, 2, 3000);
-
-
-
+EXEC TransferFunds(4, 6, 35000);
 
