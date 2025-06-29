@@ -1,4 +1,4 @@
-# 6436609-Cognizant-JavaFSE-solutions
+# Cognizant JavaFSE Solutions
 
 This repository contains solutions to the Java Full Stack Engineer (FSE) training exercises provided by Cognizant as part of their learning program.
 
