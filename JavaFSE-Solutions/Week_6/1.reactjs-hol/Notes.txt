@@ -1,0 +1,110 @@
+1. Single Page Application (SPA)
+
+Definition:
+An SPA loads a single HTML page and updates content dynamically without full page reloads.
+
+Benefits:
+
+-Fast and smooth user experience
+
+-Reduces server load
+
+-Feels like a native app
+
+-Better performance after initial load
+
+Examples: Gmail, Facebook, Twitter
+
+
+
+
+2. React and Its Working
+
+React:
+A JavaScript library for building user interfaces, mainly SPAs. Created by Meta (Facebook).
+
+How it works:
+
+-UI is built using small, reusable blocks called components
+
+-Uses a Virtual DOM to update only what has changed → improves speed and performance
+
+-Enables creation of complex, interactive UIs
+
+
+
+
+
+3. 		SPA			MPA
+  	Single page load	Multiple page loads
+	Fast, dynamic		Slower, traditional
+	Client-side routing	Server-side routing
+	Example: Gmail		Example: Amazon
+
+
+
+4. Pros & Cons of SPA
+Pros:
+
+-Fast performance
+
+-Smooth user interactions
+
+-Mobile-friendly
+
+-Reduces server requests
+
+Cons:
+
+-SEO can be difficult
+
+-Initial load time may be longer
+
+-Routing requires extra code
+
+-Security must be carefully handled
+
+
+
+
+5. React
+A component-based JavaScript library used to build interactive user interfaces.
+
+Key points:
+
+-Fast performance via Virtual DOM
+
+-Reusable components for consistency
+
+-Large community and ecosystem
+
+-Can be used for web, mobile (React Native), and VR apps
+
+
+
+6. Virtual DOM
+
+A lightweight copy of the real DOM. React updates the Virtual DOM first, compares it with the real DOM, and only changes the parts that are different.
+
+Result:
+
+-Fast and efficient UI updates
+
+-Improved performance and user experience
+
+
+
+
+7.  Features of React
+
+-Component-based architecture → Build UIs from reusable blocks
+
+-JSX → Write HTML-like code inside JavaScript
+
+-Virtual DOM → Efficient UI updates
+
+-One-way data flow → Easier debugging
+
+-Declarative UI → You describe what you want, React handles how it happens
+
+-Cross-platform → Works on web and mobile (React Native)

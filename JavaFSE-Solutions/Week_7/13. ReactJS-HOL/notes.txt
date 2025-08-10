@@ -1,0 +1,74 @@
+Q1. Explain various ways of conditional rendering
+In React, conditional rendering means showing components or elements based on certain conditions, like if statements in JavaScript.
+Different ways:
+1. if/else statement – Use JavaScript if/else to decide what to render before return.
+2. Element variables – Store JSX in a variable and render that variable.
+3. Ternary operator (condition ? truePart : falsePart) – Decide between two outputs directly inside JSX.
+4. Logical AND (&&) – Render something only if a condition is true. If false, render nothing.
+
+
+
+
+Q2. Explain how to render multiple components
+In React, you can render more than one component inside a parent by:
+1. Returning them inside a single parent element like <div> or <section>.
+2. Using React fragments (<> ... </>) to avoid adding extra HTML tags.
+3. Mapping over an array of data and returning one component for each item.
+
+Example:
+<>
+  <Header />
+  <Content />
+  <Footer />
+</>
+
+
+
+
+
+Q3. Define list component
+A list component is a React component that displays a collection of items, usually created by looping over an array using .map() and rendering each item inside JSX.
+Example:
+function ItemList({ items }) {
+  return (
+    <ul>
+      {items.map(item => <li key={item.id}>{item.name}</li>)}
+    </ul>
+  );
+}
+
+
+
+
+
+Q4. Explain about keys in React applications
+- Keys are special string attributes used in lists to help React identify which items have changed, been added, or removed.
+- Keys should be unique among siblings, but they don’t need to be globally unique.
+- Using keys helps React efficiently update the UI instead of re-rendering the whole list.
+
+
+
+
+
+Q5. Explain how to extract components with keys
+When you break a list into smaller components, keys should be assigned to the component instance, not inside the component.
+Example:
+function Item({ name }) {
+  return <li>{name}</li>;
+}
+
+function ItemList({ items }) {
+  return items.map(item => <Item key={item.id} name={item.name} />);
+}
+Here, the key is passed when rendering <Item /> in the list, not inside Item.
+
+
+
+
+Q6. Explain React Map, map() function
+- The .map() function in JavaScript creates a new array by applying a function to each element.
+- In React, .map() is commonly used to loop over arrays and return JSX elements.
+- Each JSX element returned should have a key when inside a list.
+Example:
+const names = ['John', 'Sara', 'Mike'];
+const list = names.map((name, index) => <li key={index}>{name}</li>);

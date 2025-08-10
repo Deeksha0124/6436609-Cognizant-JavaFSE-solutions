@@ -1,0 +1,58 @@
+
+1. Define JSX
+JSX (JavaScript XML) is a syntax extension for JavaScript used in React. It allows writing HTML-like code in JavaScript files. JSX makes the structure of the UI easier to visualize and maintain.
+
+
+
+
+2. Explain about ECMA Script
+ECMAScript is the standardized version of JavaScript, defined by ECMA International. ES6 (ECMAScript 2015) and later versions added many modern features like let, const, arrow functions, classes, modules, and more.
+
+
+
+
+3. Explain React.createElement()
+React.createElement() is a method used to create a React element without JSX. It takes three arguments: the HTML tag or component, props (attributes), and children (content or nested elements). JSX is internally converted to React.createElement() calls.
+
+Example:
+React.createElement('h1', {className: 'title'}, 'Hello World');
+
+
+
+
+4. Explain how to create React nodes with JSX
+React nodes are created in JSX using HTML-like tags. For example, <div>Hello</div> creates a React node. These nodes can be nested, styled, and passed as children to other components.
+
+Example:
+const element = <h1>Hello React</h1>;
+
+
+
+
+5. Define how to render JSX to DOM
+JSX elements are rendered to the DOM using ReactDOM.render(). This function takes a JSX element and a DOM node where the component should be mounted.
+
+Example:
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+
+
+6. Explain how to use JavaScript expressions in JSX
+JavaScript expressions can be embedded inside JSX using curly braces {}. This allows you to dynamically render variables, function calls, or expressions inside JSX.
+
+Example:
+const name = "React";
+const element = <h1>Welcome to {name}</h1>;
+
+
+
+
+
+7. Explain how to use inline CSS in JSX
+Inline CSS in JSX is written as an object with camelCased properties. The style attribute is passed as a JavaScript object.
+
+Example:
+const headingStyle = {color: "blue", fontSize: "20px"};
+const element = <h1 style={headingStyle}>Styled Text</h1>;

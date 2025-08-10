@@ -1,0 +1,37 @@
+
+React Events and Event Handling
+
+
+1. React Events:
+React events are the way React handles events like clicks, form submissions, mouse movements, etc., similar to how HTML DOM events work. However, React wraps these native events in its own event system called the Synthetic Event system.
+
+
+
+
+2. Event Handlers in React:
+Event handlers are functions that are triggered in response to user actions such as clicking a button or typing into an input field.
+
+Example:
+<button onClick={handleClick}>Click Me</button>
+Here, `handleClick` is the event handler that will be executed when the button is clicked.
+
+
+
+3. Synthetic Event:
+SyntheticEvent is a cross-browser wrapper around the browser’s native event. It has the same interface as the browser's native event, including stopPropagation() and preventDefault(), but it works consistently across all browsers.
+
+Example:
+function handleClick(event) {
+  event.preventDefault();
+  console.log('Button was clicked');
+}
+
+
+
+4. React Event Naming Convention:
+- React uses camelCase for event names instead of lowercase.
+  For example, `onclick` in HTML becomes `onClick` in React.
+- You pass the function as a reference, not as a string.
+
+Correct: <button onClick={handleClick}>Click</button>
+Incorrect: <button onclick="handleClick()">Click</button>

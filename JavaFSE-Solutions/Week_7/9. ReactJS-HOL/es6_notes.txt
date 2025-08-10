@@ -1,0 +1,95 @@
+
+1. List the features of ES6  
+ES6 (ECMAScript 2015) introduced several new features to JavaScript including:  
+- let and const for variable declaration  
+- Arrow functions for shorter function syntax  
+- Classes and inheritance  
+- Default parameters in functions  
+- Template literals using backticks  
+- Destructuring assignment  
+- Spread and rest operators  
+- Promises for async programming  
+- Modules (import and export)  
+- Enhanced object literals  
+- New data structures like Set and Map  
+
+
+
+
+2. Explain JavaScript let  
+The 'let' keyword is used to declare block-scoped variables. A variable declared with 'let' is limited to the block, statement, or expression where it is defined. It can be reassigned but not redeclared in the same scope.
+
+
+
+
+
+3. Identify the differences between var and let  
+- var is function-scoped; let is block-scoped  
+- var allows redeclaration in the same scope; let does not  
+- var declarations are hoisted and initialized with undefined; let declarations are hoisted but not initialized  
+- let is generally safer to use to avoid scope-related bugs  
+
+
+
+
+
+4. Explain JavaScript const  
+The 'const' keyword is used to declare variables that cannot be reassigned. Like 'let', it is block-scoped. The value of a const variable must be assigned at the time of declaration. While the variable reference can't be changed, the contents of objects or arrays declared with const can still be modified.
+
+
+
+
+
+5. Explain ES6 class fundamentals  
+ES6 introduced the 'class' syntax as a cleaner way to create objects and deal with inheritance. A class contains a constructor method and other methods. It is syntactic sugar over JavaScript’s existing prototype-based inheritance.
+
+Example:  
+class Person {  
+  constructor(name) {  
+    this.name = name;  
+  }  
+  greet() {  
+    return "Hello " + this.name;  
+  }  
+}
+
+
+
+
+
+6. Explain ES6 class inheritance  
+Inheritance in ES6 is done using the 'extends' keyword. A subclass inherits properties and methods from a parent class and can also override or add new methods.
+
+Example:  
+class Student extends Person {  
+  constructor(name, grade) {  
+    super(name);  
+    this.grade = grade;  
+  }  
+  getGrade() {  
+    return this.grade;  
+  }  
+}
+
+
+
+
+
+
+7. Define ES6 arrow functions  
+Arrow functions are a shorter syntax for writing functions. They do not bind their own 'this', so they are useful in callbacks and closures.
+
+Syntax example:  
+const add = (a, b) => a + b;  
+If only one parameter: const square = x => x * x;
+
+
+
+
+
+8. Identify set(), map()  
+set() is a built-in object that stores unique values of any type. It removes duplicate entries automatically.  
+Example: let mySet = new Set([1, 2, 3, 3]); // stores 1, 2, 3  
+
+map() is a built-in object that stores key-value pairs. Keys can be of any type, unlike objects which only allow strings or symbols as keys.  
+Example: let myMap = new Map(); myMap.set('key1', 'value1');
